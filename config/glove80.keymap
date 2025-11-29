@@ -77,6 +77,23 @@
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
+
+        startx: startx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RG(GRAVE) &kp G &kp R &kp Y &kp F &kp F &kp ENTER>,
+                <&macro_wait_time 1000>,
+                <&kp LS(P) &kp LS(A) &kp N &kp N9 &kp N8 &kp I &kp N2 &kp N1 &kp ENTER>,
+                <&macro_wait_time 500>,
+                <&kp K &kp C &kp H &kp A &kp D &kp D &kp ENTER>,
+                <&macro_wait_time 2000>,
+                <&kp LS(W) &kp E &kp SPACE &kp D &kp R &kp I &kp N &kp K &kp SPACE &kp A &kp SPACE &kp T &kp E &kp A &kp ENTER>,
+                <&macro_wait_time 500>,
+                <&kp S &kp T &kp A &kp R &kp T &kp X &kp ENTER>;
+
+            label = "STARTX";
+        };
     };
 
     keymap {
