@@ -40,6 +40,114 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
+        n1_pipe: n1_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N1_PIPE";
+            bindings = <&kp N1>, <&kp PIPE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sqt_lpar: sqt_lpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SQT_LPAR";
+            bindings = <&kp SQT>, <&kp LPAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        comma_semi: comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMI";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        slash_bslh: slash_bslh {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASH_BSLH";
+            bindings = <&kp SLASH>, <&kp BSLH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nine_less_than: nine_less_than {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NINE_LESS_THAN";
+            bindings = <&kp N9>, <&kp LT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        zero_greater_than: zero_greater_than {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_GREATER_THAN";
+            bindings = <&kp N0>, <&kp GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dqt_rpar: dqt_rpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DQT_RPAR";
+            bindings = <&kp DQT>, <&kp RPAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COLON";
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        qmark_excl: qmark_excl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QMARK_EXCL";
+            bindings = <&kp QUESTION>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        pg_up_home: pg_up_home {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PG_UP_HOME";
+            bindings = <&kp PG_UP>, <&kp HOME>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        pg_dn_end: pg_dn_end {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PG_DN_END";
+            bindings = <&kp PG_DN>, <&kp END>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        hr: hr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <32>;
+        };
     };
 
     macros {
