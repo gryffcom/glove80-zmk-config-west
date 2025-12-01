@@ -209,6 +209,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_ruble {
+            bindings = <&mt RA(N4) UC_CURR_RUBLE>;
+            key-positions = <14>;
+        };
+
+        combo_euro {
+            bindings = <&mt RC(N4) UC_CURR_EURO>;
+            key-positions = <14>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
