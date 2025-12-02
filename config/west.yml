@@ -14,7 +14,6 @@ manifest:
       revision: main
     - name: zmk-helpers
       remote: urob
-      revision: main
-      import: west.yml
+      revision: v0.3.0
   self:
     path: config
