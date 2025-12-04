@@ -17,7 +17,7 @@
 // Source unicode-chars for currency and desired languages
 #include "zmk-helpers/unicode-chars/currency.dtsi"
 #include "zmk-helpers/unicode-chars/german.dtsi"
-#include "zmk-helpers/unicode-chars/russian.dtsi"
+#include <russian.h>
 #include "zmk-helpers/unicode-chars/swedish.dtsi"
 
 #define HYPER LC(LS(LG(LALT)))
