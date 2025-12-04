@@ -11,6 +11,15 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <behaviors/unicode.dtsi>    // Source header for the unicode module
 
+#include "zmk-helpers/helper.h"
+// Source desired key-position labels
+#include "zmk-helpers/key-labels/glove80.h"
+// Source unicode-chars for currency and desired languages
+#include "zmk-helpers/unicode-chars/currency.dtsi
+#include "zmk-helpers/unicode-chars/german.dtsi"
+#include "zmk-helpers/unicode-chars/russian.dtsi
+#include "zmk-helpers/unicode-chars/swedish.dtsi
+
 #define HYPER LC(LS(LG(LALT)))
 
 // layers
