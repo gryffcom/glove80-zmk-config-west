@@ -225,10 +225,10 @@
             key-positions = <14>;
         };
 
-        combo_euro {
-            bindings = <&mt RC(N4) CURR_EURO>;
-            key-positions = <14>;
-        };
+//        combo_euro {
+//            bindings = <&mt RC(N4) CURR_EURO>;
+//            key-positions = <14>;
+//        };
     };
 
     keymap {
