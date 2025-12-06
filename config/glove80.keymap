@@ -226,7 +226,7 @@
         };
 
         combo_euro {
-            bindings = <&mt RC(N4) UC_CURR_EURO>;
+            bindings = <&mt RC(N4) CURR_EURO>;
             key-positions = <14>;
         };
     };
