@@ -29,9 +29,9 @@
 #define DVORAK 2
 #define CYR 3
 #define NUM 4
-#define LOWER 5
-#define MAGIC 6
-#define FACTORY_TEST 7
+#define LOWER_LAYER 5
+#define MAGIC_LAYER 6
+#define FACTORY_TEST_LAYER 7
 
 / {
     behaviors {
@@ -43,7 +43,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo MAGIC>, <&to MAGIC>;
+            bindings = <&mo MAGIC_LAYER>, <&to MAGIC_LAYER>;
         };
 
         magic: magic_hold_tap {
