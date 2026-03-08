@@ -24,10 +24,14 @@
 
 // layers
 
-#define DEFAULT 0
-#define LOWER 1
-#define MAGIC 2
-#define FACTORY_TEST 3
+#define BYOU 0
+#define QWERTY 1
+#define DVORAK 2
+#define CYR 3
+#define NUM 4
+#define LOWER 5
+#define MAGIC 6
+#define FACTORY_TEST 7
 
 / {
     behaviors {
