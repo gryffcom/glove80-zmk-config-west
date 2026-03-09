@@ -1,5 +1,7 @@
 manifest:
   remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
     - name: moergo-sc
       url-base: https://github.com/moergo-sc
     - name: urob
