@@ -35,15 +35,19 @@
 
 / {
     behaviors {
-        // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
-        // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
+        lang_word: lang_word {
+          compatible = "zmk,behavior-auto-layer";
+          #binding-cells = <1>;
+          continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP>;
+          ignore-modifiers;
+        };
 
         // Step 1: Tap-Dance for Single vs Double Tap
         td_layers: tap_dance_layers {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&tog CYR>, <&auto_layer>; // 1: Toggle, 2: Auto-Layer
+            bindings = <&tog CYR>, <&lang_word>; // 1: Toggle, 2: Auto-Layer
         };
 
         // Step 2: Hold-Tap to wrap everything
@@ -55,6 +59,8 @@
             bindings = <&num_word>, <&td_layers>; // Hold: Num Word, Tap: Tap-Dance
         };
 
+        // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
+        // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
         layer_td: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_TAP_DANCE";
