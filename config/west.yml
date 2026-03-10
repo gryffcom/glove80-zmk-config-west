@@ -8,6 +8,9 @@ manifest:
       url-base: https://github.com/urob
   projects:
     - name: zmk
+      remote: zmkfirmware
+      revision: v0.3
+    - name: zmk
       remote: moergo-sc
       revision: main
       import: app/west.yml
