@@ -10,7 +10,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 #include "zmk-helpers/helper.h"
-#include "zmk-auto-layer/include/auto_layer.h" // 1. Include header
 
 #include <behaviors/num_word.dtsi>
 // Source desired key-position labels
