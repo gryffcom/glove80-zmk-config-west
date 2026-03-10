@@ -1,19 +1,30 @@
 manifest:
   remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
     - name: moergo-sc
       url-base: https://github.com/moergo-sc
     - name: urob
       url-base: https://github.com/urob
+
   projects:
     - name: zmk
       remote: moergo-sc
-      revision: main
+      revision: main # or the specific Glove80 release branch
       import: app/west.yml
-    - name: zmk-auto-layer
-      remote: urob
-      revision: v0.3
+
     - name: zmk-helpers
       remote: urob
-      revision: v0.3
+      revision: v0.3 # match your ZMK version, often v0.3 for urob's config
+
+    - name: zmk-auto-layer
+      remote: urob
+      revision: main
+
+    - name: zmk-unicode
+      remote: urob
+      revision: main
+
   self:
     path: config
+
