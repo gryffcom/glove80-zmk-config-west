@@ -41,7 +41,7 @@
           label = "AUTO_LAYER_CYR";
           #binding-cells = <0>;
           continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP>;
-          layer = <cyr>; // The index of your NUM layer
+          layer = <3>; // The index of your NUM layer
           ignore-modifiers;
         };
 
